@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '1.2.3'
+}
+
+group 'io.sjm'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+mainClassName = "io.sjm.tpst.Main"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'commons-io:commons-io:2.4'
+    compile 'com.tumblr:jumblr:0.0.11'
+}
